@@ -328,5 +328,7 @@
 
     <string name="network_unstable">网络不稳定</string>
     <string name="no_call_data">没有通话数据</string>
+    <string name="off">关</string>
+    <string name="on">开</string>
 
 </resources>

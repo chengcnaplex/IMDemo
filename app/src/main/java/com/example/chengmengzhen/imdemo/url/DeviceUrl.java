@@ -2,8 +2,6 @@ package com.example.chengmengzhen.imdemo.url;
 
 import com.example.chengmengzhen.imdemo.bean.Device;
 
-import java.util.List;
-
 import retrofit.Call;
 import retrofit.http.GET;
 
@@ -30,8 +28,8 @@ public interface DeviceUrl {
      * }
      * });
      ********************************************************************/
-    @GET("Restful/rest/finduser}")
-    Call<List<Device>> users();
+    @GET("finduser")
+    Call<Device> Devices();
 
 
     /*****************************************************************

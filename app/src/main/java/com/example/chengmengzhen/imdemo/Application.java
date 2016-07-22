@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
+import com.cengalabs.flatui.FlatUI;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
 
@@ -21,7 +22,11 @@ public class Application extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        FlatUI.initDefaultValues(this);
 
+        // Setting default theme to avoid to add the attribute "theme" to XML
+        // and to be able to change the whole theme at once
+        FlatUI.setDefaultTheme(FlatUI.SKY);
         EMOptions options = new EMOptions();
         // 默认添加好友时，是不需要验证的，改成需要验证
         options.setAcceptInvitationAlways(false);

@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         // enter the main activity if already logged in
 //        if (DemoHelper.getInstance().isLoggedIn()) {
 //            autoLogin = true;
-//            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//            startActivity(new Intent(LoginActivity.this, .class));
 //
 //            return;
 //        }
@@ -133,7 +133,7 @@ public class LoginActivity extends AppCompatActivity {
                // DemoHelper.getInstance().getUserProfileManager().asyncGetCurrentUserInfo();
 
                 Intent intent = new Intent(LoginActivity.this,
-                        MainActivity.class);
+                        DevicesActivity.class);
                 startActivity(intent);
 
                 finish();

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.cengalabs.flatui.views.FlatTextView
+        android:gravity="center"
+        android:text="@string/off"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <com.cengalabs.flatui.views.FlatToggleButton
+        android:id="@+id/ctl_toggle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+    <com.cengalabs.flatui.views.FlatTextView
+        android:gravity="center"
+        android:text="@string/on"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+</LinearLayout>
